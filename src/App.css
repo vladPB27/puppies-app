@@ -1,0 +1,176 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;1,500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Space+Grotesk:wght@300;400;500&family=Urbanist:ital,wght@0,200;0,400;0,600;1,200&family=Work+Sans:ital,wght@0,300;0,400;1,500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Space+Grotesk:wght@300;400;500&family=Urbanist:ital,wght@0,200;0,400;0,600;1,200&family=Work+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+* {
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: 'Urbanist', sans-serif;
+}
+
+.container {
+  padding: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* align-content: center; */
+}
+
+.flex-container .test div {
+  font-size: 60px;
+  width: 60px;
+  border: solid 1px black;
+  /* text-align: center; */
+  /* line-height: 50px; */
+}
+
+.grid-container {
+  border: solid 1px black;
+  background-color: rgb(166, 219, 221);
+  margin: 10px;
+  padding: 10px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 40px auto 100px;
+  grid-template-rows: 60px 90px auto;
+  /* justify-content: center; */
+  align-content: center;
+  /* align-items: center; */
+}
+
+.grid-container div {
+  border: solid 1px black;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.item1 {
+  grid-area: 1/ span 2;
+}
+
+.item2 {
+  grid-area: 1/ span 2;
+}
+
+/* ======= TOGGLE */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* -------seracher */
+.flex-searcher {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* --------DOGS ITEM */
+.flex-dog-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-dog-item div {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* media queries */
+/* @media (max-width:600px) {
+  body{
+    background-color: blueviolet;
+  }
+}
+@media (min-width:600px) {
+  body{
+    background-color: aqua;
+  }
+} */
+
+.bg-home {
+  height: 800px;
+  width: 100%;
+  background-image: url('./assets/images/puppie.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  /* align-content: space-between; */
+  /* align-items: center; */
+
+}
