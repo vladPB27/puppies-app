@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/puppies-app/'
+  base: 'https://vladPB27.github.io/puppies-app/'
 })
