@@ -23,7 +23,7 @@ export default function Home() {
                 </HomeText>
             </div>
             <div>
-                <p>FOOTER</p>
+                {/* <p>FOOTER</p> */}
             </div>
         </>
     )
