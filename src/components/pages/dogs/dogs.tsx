@@ -40,6 +40,8 @@ export default function Dogs() {
             [name]: value
         })
         // filterDogs();
+        console.log(dogs);
+        
 
     }
 
